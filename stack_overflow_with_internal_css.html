@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <title>For Plexus Contest </title>
+        <link rel="shortcut icon" href=" ">
+		<link rel="stylesheet" href="css/stack-overflow.css">
+        
+ </head>
+ <body>
+    <nav>
+    <style>
+          div {
+          width: 10px;
+          height: 5px;
+          background-color: black;
+          margin: 5px 0px;
+          }
+          div {
+          width: 10px;
+          height: 5px;
+          background-color: black;
+          margin: 5px 0px;
+          }
+          section > div {
+          width: 20px;
+          height: 3px;
+          background-color: gray;
+          margin: 5px 0pxs;
+          }
+    </style>
+      <ol id="list-1">
+	      <li><button id="button1" style="background-color: white;"><section><div></div><div></div><div></div></section></button></li>
+          <li id="a"><a class="img-1" href="https://stackoverflow.com"><span><img width="25px" height="25px" src="data:image/png;base64,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">Stack<b>overflow</b></a></li>
+          <li><a href="https://stackoverflow.com/#"><button id="b" class="button" style="background-color: #F5890D; color: white;">Products</button></a></li>
+          <li><a href="https://stackoverflow.com/teams/customers"><button id="c" class="button" style="background-color: white; color: #313333;">Customers</button></a></li>
+          <li><a href="https://stackoverflow.com/teams/use-cases"><button id="d" class="button" style="background-color: white; color:#313333;">User Cases</button></a></li>
+          <li><input type="text" placeholder="🔍Search..." name="search" id="e"></li>
+          <li><a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f"><button id="f" style="background-color:#C9E1FC; color:#589EF0 ">Log In</button></li>
+          <li><a href="https://stackoverflow.com/users/signup?ssrc=head&returnurl=%2fusers%2fstory%2fcurrent"><button id="g" style="background-color:#428FE7; color:white">Sign In</button></a></li>
+	   </ol>
+     </nav>
+    <section  class="bg">
+                                    <br><br><br><br><br><br><br>
+     <style>
+           body, html {
+           height: 100%;
+           margin: 0;
+           }
+           .bg {
+           background-image: url("background.png");
+           background-position: center center;
+           background-attachment: fixed;
+           width: 100%; 
+           background-repeat: no-repeat;
+           background-size: cover;
+           }
+     </style>
+   <section>
+              <p><b> We <3 people who code</b></p>
+    </section>
+    <section>
+    <section>
+              <p id="text-2">We build products that empower developers and connect them to solutions that enable productivity, growth, and discovery.</p>
+                                                  <br>
+	     <ul class="buttontwo">
+		     <li><a href="https://stackoverflow.com/#for-developers"><button  id="button2" style="background-color: white; color:#F48B11;">For developer</button></a></li>
+             <li><a href="https://stackoverflow.com/#for-developers"><button id="button2" style="background-color: #F48B11; color: white;">For businesses</button></a></li></ul>
+		                              <br><br><br><br><br><br><br>
+	 </section>
+	 </section>
+	 </section>
+	 <section><br><br><br><br><br><br>
+	 <section>
+	        <p align="center" id="text-3"><b>For developers,by developers</b></p>
+	        <p align="center" id="text-4" style="background-color: #F48B11;">-<p>
+	        <p align="center" id="text-5">Stack Overflow is an <span class="color1">open community</span> for anyone that codes. We help you get answers to your toughest coding questions, share knowledge with your coworkers in private, and find your next dream job.</p>		
+	 </section>
+	 <section> 
+        <ul id="pricing">
+             <li id="qa" class="public">
+             <img align="center" width="120px" height="auto" src="https://cdn.sstatic.net/Img/home/public-qa.svg?v=d82acaa7df9f">
+             <P class="qa"> Public Q&A </p>
+             <p class="text-6">Get answers to more than 16.5 million questions and give back by sharing your knowledge with others. <span class="color1">Sign up</span> for an account.</p>
+             <a href="https://stackoverflow.com/questions"><button  id="button4" style="background-color: #004487; color: white;">Brows questions</button></a></li>
+       
+	         <li id="qa" class="private">
+             <img align="center" width="120px" height="auto" src="https://cdn.sstatic.net/Img/home/private-qa.svg?v=2c1de180b6d7">
+             <P class="qa"> Private Q&A </p>
+             <p class="text-6">Level up with Stack Overflow while you work. Share knowledge privately with your coworkers using our flagship Q&A engine.</p>
+             <a href="https://stackoverflow.com/teams"><button  id="button4" style="background-color: #F9871F; color: white;">Try for free</button></a></li>
+       
+	         <li id="qa" class="browse-job">
+             <img align="center" width="120px" height="auto" src="https://cdn.sstatic.net/Img/home/jobs.svg?v=931d6c0863ee">
+             <P class="qa"> Browse job</p>
+             <p class="text-6">Find the right job through high quality listings and search for roles based on title, technology stack, salary, location, and more.</p>
+             <a href="https://stackoverflow.com/jobs"><button  id="button4" style="background-color: #004487; color: white;">Find a job</button></a></li>
+        </ul>    
+	  </section>
+                                                <br><br><br>
+      </section>
+                                           <br><br><br><br><br><br>
+      <section>
+	     <p align="center" id="text-3"><b>For businesses,by developers</b></p>
+	     <p align="center" id="text-4" style="background-color: #F48B11;">-</p>
+         <p align="center" id="text-6">Our mission is to help developers write the script of the future. This means helping you find and hire skilled developers for your business and providing them the tools they need to share knowledge and work effectively.</p>
+	  <section>
+           <ul id="pricing">
+           
+		   <li id="qa" class="public">
+           <img align="center" width="90px" height="auto" src="https://cdn.sstatic.net/Img/home/private-questions.svg?v=a4f1cfb08f7e">
+           <p class="text-6">Quickly find and share internal knowledge with
+           <a style="color: #F9871F;" href="https://stackoverflow.com/teams"> Private Q&A </a></p></li>
+	       
+		   <li id="qa" class="private-bz">
+           <img align="center" width="90px" height="auto" src="https://cdn.sstatic.net/Img/home/find-candidate.svg?v=9099aa106ad3">
+            <p class="text-6">Find the perfect candidate for your growing technical team with 
+            <a style="color: #F9871F;" href="https://stackoverflow.com/talent/en">Talent solutions</a></p></li>  
+	        
+			<li id="qa" class="browse-job">
+            <img align="center" width="90px" height="auto" src="https://cdn.sstatic.net/Img/home/accelerate.svg?v=9d4c2786ff02">
+            <p class="text-6">Accelerate the discovery of your products or services through our 
+            <a style="color: #F9871F;" href="https://stackoverflow.com/advertising">Advertising platform</a></p></li>
+        </ul>  
+   </section><br><br><br><br><br><br><br><br><br><br><br>
+   <section id="price">
+	                                             <br><br><br><br>
+	         <p class="main">Unlock siloed knowledge with<br> Stack Overflow for Teams</p>
+	         <p class="sub-main">Wikis, chat messages, or formal documentation for knowledge management aren’t effective. Our question and answer format is a proven approach for accessing the right information in less time.</p>
+	         <a href="https://stackoverflow.com/teams"><button  id="button4" style="background-color: #F9871F; color: white;">Learn more</button></a>
+     <ul id="pricing">
+	    <ol id="text-10" class="basic">
+	         <p align="center" id="text-7">Basic<br>
+	            <span align="center" id="text-8">Private knowledge base for teams</span></p>
+	         <p align="center" id="text-9">$5 per teammate / month<br>  billed annually</p>
+	          <li><span style="color: #F9871F;">✓</span> Free 30 day trial</li>
+	          <li><span style="color: #F9871F;">✓</span> Your own private space hosted on<br><span style="color:white;">---</span> stackoverflow.com</li>
+	          <li><span style="color: #F9871F;">✓</span> Fully searchable archive</li>
+	        <a href="https://stackoverflow.com/teams#get-started"><button  id="button5" style=" align-item: center; border: 3px; border-color: lightblue;background-color: #CACACA; color: black;">Get started for free</button></a>
+         </ol>
+	     <ol id="text-10" class="business">
+	      <p align="center" id="text-7">Business<br>
+	            <span align="center" id="text-8">Private knowledge base with SSO and premium features</span></p>
+	      <p align="center" id="text-9">$12 per teammate / month<br> billed annually</p>
+	         <li><span style="color: #F9871F;">✓</span> All the features of Basic</li>
+	         <li><span style="color: #F9871F;">✓</span> Single sign-on (SSO) with SAML</li>
+	         <li><span style="color: #F9871F;">✓</span> Reporting and analytics</li>
+	         <li><span style="color: #F9871F;">✓</span> Priority customer support</li>
+	         <li><span style="color: #F9871F;">✓</span> 99.5% uptime</li>
+	      <a href="https://stackoverflow.com/teams#get-started"><button  id="button5" style=" align-item: center; border: 3px; border-color: lightblue;background-color: #CACACA; color: black;">Request a demo</button></a>
+         </ol>
+	     <ol id="text-10" class="enterprise">
+	      <p align="center" id="text-7">Enterprise<br>
+	     <span align="center" id="text-8">Standalone knowledge base with enhanced security and flexible hosting</span></p>
+	      <p align="center" id="text-9">Custom pricing</p>
+	        <li><span style="color: #F9871F;">✓</span> Host on your cloud or servers – or<br><span style="color:white;">---</span> our private managed cloud</li>
+	        <li><span style="color: #F9871F;">✓</span> Single sign-on with AD or SAML</li>
+        	<li><span style="color: #F9871F;">✓</span> Robust read and write API</li>
+	        <li><span style="color: #F9871F;">✓</span> Your own customer success and<br><span style="color:white;">---</span> community building<br><span style="color: white;;">---</span> representative</li>
+	        <li><span style="color: #F9871F;">✓</span> 99.5% uptime SLA and priority<br><span style="color:white;">---</span> support</li>
+	        <a href="https://stackoverflow.com/teams#get-started"><button  id="button5" style=" align-item: center; border: 3px; border-color: lightblue;background-color: #EBC606; color: black;">Request a demo</button></a>
+          </ol>
+	   </ul>
+	 </section>
+	 <section>
+	 <section>
+	 <section>
+	 <section>
+	  <ul id="last" class="good">
+	     <li><a href="https://stackoverflow.com/"><img width="30px" src="last-icon.png"</a><li>
+	  </ul>
+	</section>
+	<section>
+	  <ul id="last">
+	     <li class="last-list-header"><a href="https://stackoverflow.com/">STACK OVERFLOW</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/questions">Questions</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/jobs">Jobs</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/jobs/directory/developer-jobs">Developer Jobs Directory</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/jobs/salary">Salary Calculator</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/help">Help</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/?__=1026449001">Mobile</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/">Disable Responsiveness</a></li>
+	  </ul>
+   </section>
+   <section>
+	 <ul id="last">
+	     <li class="last-list-header"><a href="https://stackoverflow.com/?products">PRODUCTS</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/teams">Teams</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/talent/en">Talent</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/advertising">Advertising</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/enterprise">Enterprise</a></li>
+	 </ul>
+   </section>
+   <section>
+	 <ul id="last">
+	     <li class="last-list-header"><a href="https://stackoverflow.com/company">COMPANY</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/company">About</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/company/press">Press</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/company/work-here">Work Here</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/legal/terms-of-service">Legal</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/legal/privacy-policy">Privacy Policy</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/company/contact">Contact Us</a></li>
+	 </ul>
+   </section>
+   <section>
+	  <ul id="last">
+	     <li class="last-list-header"><a href="https://stackexchange.com/">STACK EXCHANGE <br>NETWORK</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/#">Technology</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/#">Life / Arts</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/#">Culture / Recreation</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/#">Science</a></li>
+	     <li class="last-list"><a href="https://stackoverflow.com/#">Other</a></li>
+	  </ul>
+	</section>
+	<section>
+	  <ul id="last">
+	     <li class="last-list"><a href="https://stackoverflow.blog/?blb=1">Blog</a></li>
+	     <li class="last-list"><a href="https://www.facebook.com/officialstackoverflow/">Facebook</a></li>
+	     <li class="last-list"><a href="https://twitter.com/stackoverflow">Twitter</a></li>
+	     <li class="last-list"><a href="https://www.linkedin.com/checkpoint/challengesV2/AQGbjkJAWf4HFQAAAXKmmPeByouNM3AJgGF6tTmCAcLakKCoCs8U2hQqcZT9ISYme5VgnIm-NFNCBq9nj5Kg6gbGVGweWtjNPw">LinkedIn</a></li>
+	     <li class="last-list"><a href="https://www.instagram.com/thestackoverflow/">Instagram</a></li>
+	  </ul> 
+	</section>
+    </section>
+	</section>
+	</section>
+ </body>
+ <footer style="background-color: teal; color: white; text-align:center;">
+ Page created by Kazi Amir Hamza.<br>
+ This is not the real site.It is created to practice html & css
+ </footer>
+ <style>
+ body > section > section> p {
+    font-weight: 700;
+	text-align:center;
+	font-size: 53px;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+.color1{
+	color: #F88D2C;
+}
+#qa {
+	height: auto;
+	background-color: #fff;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	border-radius: 10px;
+	width: 200px;
+	text-align:center;
+	display: inline-block;
+}
+body >section> section > ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+    box-sizing: inherit;
+	margin-right: 30px;
+	margin-top: 50px;
+}
+body >section{
+	background-color: #F5F5F5;
+}
+.public{
+	
+	 padding: 32px;
+	 margin-top: 30px;
+}
+.private{
+	 padding: 32px;
+	 margin-bottom: 32px;
+	 margin-top:5px;
+}
+.browse-job{
+	 padding: 32px;	
+	 margin-top: 30px;
+}
+#forbiz{
+	display: flex;
+	list-style: none;
+	background-color: white;
+	border-color: red;
+	border: 5px;
+	justify-content: space-between;
+	align-items: center;
+    box-sizing: inherit;
+	margin-right: 30px;
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+ body> section> ul{
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+    box-sizing: inherit;
+	margin-right: 30px;
+	margin-top: 50px;
+	background-color: #DFDBD8;
+	flex-direction: column;
+}
+#new{
+	text-align:center;
+	width: 200px;
+}
+.private-bz{
+	 padding: 32px;
+	 margin-top: 30px;
+}
+#price{
+	background-color: #2C208B;
+	color: white;
+	text-align: center;
+	
+}
+.main{
+	font-size:  35px;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+.sub-main{
+	font-size:17px;
+	font: inherit;
+	font-family: 'Source Sans Pro',sans-serif;
+	padding:0% 20%;
+}
+#pricing{
+	list-style: none;
+	display: flex;
+	justify-content: spce-between;
+	flex-flow: row wrap;
+	align-items: center;
+}
+.basic{
+	margin-right:2px;
+}
+.business{
+	margin: 0px 2px 0px 2px;
+	margin-bottom: 60px;
+	margin-top: 10px;
+}
+.enterprise{
+	margin-left: 2px;
+	margin-bottom: 110px;
+	background-color: #3237F8;
+	color: white;
+}
+#last{
+	list-style: none;
+	color: #848d95;
+}
+.last{
+	list-style:none;
+	display: flex;
+}
+body>section>section>section>section>ul{
+    text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	background-color:;
+	color: #B7B7B7;
+}
+body>section>section>section>section{
+	display: flex;
+	flex-flow: row wrap;
+	background-color:lightblue;
+}
+.last-list{
+	padding: 3px;
+	font-size: 15px;
+}
+.last-list-header{
+	text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #bbc0c4;
+    line-height: 1.30769231;
+    max-width: 230px;
+}
+#button1{
+	border: 0px;
+	width: 24px;
+	height: 14px;
+	cursor: pointer;
+}
+#button4{
+	border: 3px;
+	border-radius: 5px;
+	border-color: #F48B11;
+	width: 150px;
+	height: 40px;
+	margin-left: 10px;
+    cursor: pointer;
+}
+#button5{
+	border: 3px;
+	border-radius: 5px;
+	border-color: #F48B11;
+	width: 150px;
+	height: 40px;
+	margin-left: 10px;
+    cursor: pointer;
+	align-items: center;
+	margin-top: 10px;
+	margin-left: 40px;
+	padding: opx 10px;
+}
+.button{
+	 text-align: center;
+	 font-size: 16px; 
+	 margin: 5px;
+}
+.developer {
+	background-color: white;
+	border: 1px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.business {
+	background-color: #DF6E07; 
+}
+#c{
+	 margin: 5px;
+	 border: 0px;
+	 border-radius: 20px;
+	 padding: 5px 9px;
+	 cursor: pointer;
+	 font-size: 13px;	 
+ }
+ #d{
+     margin: 5px;
+	 border: 0px;
+	 border-radius: 20px;
+	 padding: 5px 9px;
+	 cursor: pointer;
+	 font-size: 13px;	
+ }
+ #e{
+	 margin: 0px;
+     margin-right: 10px;
+	 cursor: text;
+	 width: 200px;
+	 height: 35px; 
+ }
+#f{
+	 width: 60px;
+	 height: 34px;
+	 border: 2px;
+	 float: left;
+	 border-radius: 4px;
+}
+ #g{
+	 width: 60px;
+	 height: 34px;
+	 border: 2px;
+	 border-color: #16A8BE;
+	 border-radius: 4px;
+	 margin-left: 5px;
+	 float: left;
+}
+ #a{
+	 margin-left: 5px;
+	 display: flex;
+	 font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	 font-size: 18px;
+     text-align: center;
+	 padding: 3px;
+ }
+ #b{
+	 margin: 5px;
+	 border: 0px;
+	 border-radius: 20px;
+	 padding: 5px 9px;
+	 cursor: pointer;
+	 font-size: 15px;
+ }
+ .good{
+	margin-left: 10px;
+	width: 0px;
+}
+#text-2 {
+	font-size: 23px;
+	text-align: center;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	padding:0% 20%;
+}
+#text-3{
+	font-size: 38px;
+	font-family:  Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+#text-4{
+	font-size: 10px;
+	color: #F48B11;
+	margin-left:46%;
+	margin-right:46%;
+	border-radius: 10px;
+}
+#text-5{
+	font-size: 18px;
+	font: inherit;
+	font-family: 'Source Sans Pro',sans-serif;
+	padding:0% 20%;
+}
+.text-6{
+	font-size: 16px; 
+}
+#text-6{
+	font-size: 19px;
+	font-family: 'Source Sans Pro',sans-serif;
+	padding:0% 20%;
+}
+#text-7{
+	font-size: 30px;
+	font-family: 'Roboto Slab Bold',serif;
+	color: blue;
+}
+#text-8{
+	font-size: 15px;
+	font-family: 'Roboto Slab Bold',serif;
+	color: black;
+}
+#text-9{
+	font-size: 20px;
+	font-family: 'Roboto Slab Bold',serif;
+	color: black;
+	text-align:left;
+	margin-top: 0px;
+}
+#text-10{
+	background-color: white;
+	color: black;
+	list-style: none;
+	text-align:left;
+	width: 250px;
+	border-radius: 10px;
+	padding: 24px;
+}
+.qa{
+	font-size: 24spx;
+}
+body > nav > ol{
+	 list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     justify-content:space-between;  
+}
+ nav > ol > li{
+	float: left;
+ }
+ nav> li> a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+ }
+ nav{
+	 background-color:  white;
+	 position: fixed;
+	 overflow: hidden;
+	 top: o;
+	 width:100%;
+	 height: auto;
+	 margin-top: 0px;
+ }
+ #list-1{
+	 float: left;
+ }
+#button2{
+	border: 3px;
+	border-radius: 5px;
+	border-color: #F48B11;
+	width: 150px;
+	height: 40px;
+    cursor: pointer;
+	margin: 5px;
+	align-items: center;
+}
+.buttontwo {
+	align-items: center;
+	list-style: none;
+    padding:0;
+	text-align: center;
+}
+ </style>
+</html>

@@ -1,7 +1,6 @@
-- 👋 Hi, I’m @kaziamir
+- 👋 Hi, I’m @kazi-amir
 - 👀 I’m interested in web developing
 - 🌱 I’m currently learning html & css
-- 📫 Contact me: kaziah444@gmail.com
 
 <!---
 kaziamir/kaziamir is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
